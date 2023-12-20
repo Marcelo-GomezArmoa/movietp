@@ -134,7 +134,6 @@ const searchMovies = (e) => {
 
 
           
-
           {/* Enlaces que hay que configurar con el react-dom*/}
           <div className="navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto mb-5">
@@ -229,8 +228,6 @@ const searchMovies = (e) => {
       </div>
 
 
-
-
              {/* AGREGAR Y QUITAR FAV */}
       <div className="container mt-3">
   <h2>Favorites</h2>
@@ -255,29 +252,12 @@ const searchMovies = (e) => {
 
 {/* LOGRAR QUE LOS FAVORITOS APAREZCAN EN UN LISTA EN OTRA PANTALLA PARA ESO DEBO UTILIZAR REACT DOM 
 TAMBIEN CUANDO SE HACE CLICK EN INICIO REFRESQUE LA PAG, */}
-
-
-
-      
+    
 
        {/* CONTAINER QUE VA A MOSTRAR POSTERS DE LAS PELICULAS CUANDO SE HAGA LA PETICION DE LA API */}
       <div className="container mt-3">
         <div className="row">
-          {/* {movies.map((movie) => (
-            <div
-              key={movie.id}
-              className="col-md-4 mb-3"
-              onClick={() => selectMovie(movie)}
-            >
-              <img
-                src={`${URL_IMAGE + movie.poster_path}`}
-                alt=""
-                height={600}
-                width="100%"
-              />
-              <h4 className="text-center">{movie.title}</h4>
-            </div>
-          ))} */}
+          
           {movies.map((movie) => (
   <div key={movie.id} className="col-md-4 mb-3">
     <img
